@@ -22,6 +22,17 @@ public class ListaSimple{
 		System.out.print("[X]\n");
 	}
 	
+		public void toString(){
+		String cadAux = "";
+		for (Node temp = this.top; temp != null; temp = temp.next){
+			System.out.print("[" + temp.name + "] -> ");
+		}
+
+		cadAux += "[X]\n";
+
+		return cadAux;
+	}
+	
 	public void insertarAntesPrimerNodo(String nombre){
 		Node temp;
 		temp = new Node ();
