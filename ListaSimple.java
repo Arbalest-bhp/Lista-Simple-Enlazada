@@ -42,6 +42,25 @@ public class ListaSimple{
 		temp = null;
 	}
 	
+	//Insertion at the end of a list
+	public void insertarAlFinal(String nombre){
+		//create new node
+		temp = new Node();
+		temp.name = nombre;
+		temp.next = null;
+		Node temp2;
+		temp2 = this.top;
+
+		//rerun list to reach the end -- then insert the new node by adding it as the last node
+		while(temp2.next != null)
+			temp2 = temp2.next;
+
+		//Eliminate the temporary variables
+		temp2.next = temp;
+		temp = null;
+		temp2 = null;
+
+	
 
 
 }
