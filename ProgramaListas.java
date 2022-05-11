@@ -10,6 +10,8 @@ public class ProgramaListas {
 		miLista.imprimir();
 		miLista.insertarAntesPrimerNodo("C");
 		miLista.imprimir();
+		
+		System.out.println(miLista); //miLista.toString
 
 	}
 }
