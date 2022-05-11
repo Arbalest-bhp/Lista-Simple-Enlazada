@@ -22,6 +22,15 @@ public class ListaSimple{
 		System.out.print("[X]\n");
 	}
 	
+	public void insertarAntesPrimerNodo(String nombre){
+		Node temp;
+		temp = new Node ();
+		temp.name = nombre;
+		temp.next = this.top;
+		this.top = temp;
+		temp = null;
+	}
+	
 
 
 }
