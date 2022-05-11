@@ -12,6 +12,11 @@ public class ProgramaListas {
 		miLista.imprimir();
 		
 		System.out.println(miLista); //miLista.toString
+		
+		miLista.insertarAlFinal("D");
+		System.out.println(miLista); //miLista.toString
 
+		miLista.insertarAlFinal("E");
+		System.out.println(miLista); //miLista.toString
 	}
 }
