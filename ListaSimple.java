@@ -59,7 +59,7 @@ public class ListaSimple{
 		temp2.next = temp;
 		temp = null;
 		temp2 = null;
-		
+	}	
 	//Insertion between two nodes
 	public boolean insertarEntreNodos(String nombre, String buscado){
 		Node temp = new Node;
