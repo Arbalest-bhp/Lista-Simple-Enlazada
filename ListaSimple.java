@@ -82,4 +82,8 @@ public class ListaSimple{
 		else return false;
 		
 	}
+	
+	/*To remove a node
+	
+	top = top.next*/
 }
