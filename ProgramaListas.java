@@ -19,6 +19,10 @@ public class ProgramaListas {
 		miLista.insertarAlFinal("E");
 		System.out.println(miLista); //miLista.toString
 		
+		//To insert the First element depending on the second input of the value given.
+		//Here, F is the letter that we want to insert between two elements.
+		//A is the element we want to end up at the left side of F
+		//So we would get A -> F -> B
 		boolean result = miLista.insertarEntreNodos("F", "A");
 		if (result){
 			System.out.println("Si inserto el nodo F");
