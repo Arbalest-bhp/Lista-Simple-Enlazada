@@ -40,5 +40,8 @@ public class ProgramaListas {
 		//Clear all NODES
 		miLista.top = null;
 		System.out.println(miLista);//miLista to String()*/
+		
+		miLista.borrarPrimerNodo();
+		System.out.println(miLista);
 	}
 }
