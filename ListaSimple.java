@@ -103,7 +103,19 @@ public class ListaSimple{
 		else return false;
 		}
 	}
+
+	//Eliminating the final node of the list
+	//Need to find the second to last node of the list
+	public void borrarUltimoNodo
+	Node temp = top;
+	//Find the Penultimate node
+	while (temp.next.next != null)
+		temp = temp.next;
+	//Once found, erase the last node
+	temp.next = null;
+
+
+
 	/*To remove a node
-	
 	top = top.next*/
 }
