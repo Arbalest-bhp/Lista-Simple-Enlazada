@@ -82,7 +82,9 @@ public class ListaSimple{
 		else return false;
 		
 	}
-	
+	//Removal of Nodes
+	public void borrarPrimerNodo
+		this.top = this.top.next;
 	/*To remove a node
 	
 	top = top.next*/
