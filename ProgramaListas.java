@@ -6,30 +6,25 @@ public class ProgramaListas {
 
 		miLista.insertaPrimerNodo("A");
 		miLista.imprimir();
-		miLista.insertarAntesPrimerNodo("B");
+		miLista.insertaAntesPrimerNodo("B");
 		miLista.imprimir();
-		miLista.insertarAntesPrimerNodo("C");
+		miLista.insertaAntesPrimerNodo("C");
 		miLista.imprimir();
-		
-		System.out.println(miLista); //miLista.toString
-		
-		miLista.insertarAlFinal("D");
-		System.out.println(miLista); //miLista.toString
+		System.out.println(miLista); // miLista.toString();
 
-		miLista.insertarAlFinal("E");
-		System.out.println(miLista); //miLista.toString
-		
-		//To insert the First element depending on the second input of the value given.
-		//Here, F is the letter that we want to insert between two elements.
-		//A is the element we want to end up at the left side of F
-		//So we would get A -> F -> B
-		boolean result = miLista.insertarEntreNodos("F", "A");
+		miLista.insertaAlFinal("D");
+		System.out.println(miLista); // miLista.toString();
+
+		miLista.insertaAlFinal("E");
+		System.out.println(miLista); // miLista.toString();
+
+		boolean result = miLista.insertaEntreNodos("F", "A");
 		if (result){
-			System.out.println("Si inserto el nodo F");
+			System.out.println("Se insertó el nodo F");
 		}
-		else System.out.print("No se encontro el nodo Z");
-		
-		System.out.println(miLista);//miLista to String()
+		else System.out.println("No se encontró el nodo Z");
+
+		System.out.println(miLista); // miLista.toString();
 		
 		/*//Removing Nodes
 		//Final Scenario in this test = C -> B -> A -> F -> D -> E
@@ -44,15 +39,15 @@ public class ProgramaListas {
 		miLista.borrarPrimerNodo();
 		System.out.println(miLista);//miLista to String()
 		
-		miLista.borrarCualquierNodo("A")
+		miLista.borrarCualquierNodo("A");
 		System.out.println(miLista);//miLista to String()
 		
-		result = miLista.borrarCualquierNodo("Z");
+		result = miLista.borrarCualquierNodo("F");
 		
 		if (result){
-			System.out.println("Se borro el Nodo Z");
+			System.out.println("Se borro el Nodo");
 		}
-		else System.out.println("No se borro");
+		else System.out.println("No se borro el Nodo");
 		
 		miLista.borrarUltimoNodo();
 		System.out.println(miLista);//miLista to String()
