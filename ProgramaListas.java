@@ -30,5 +30,15 @@ public class ProgramaListas {
 		else System.out.print("No se encontro el nodo Z");
 		
 		System.out.println(miLista);//miLista to String()
+		
+		/*//Removing Nodes
+		//Final Scenario in this test = C -> B -> A -> F -> D -> E
+		miLista.top = miLista.top.next.next.next;
+		System.out.println(miLista); //miLista to String()
+		//After Execution = F -> D -> E
+		
+		//Clear all NODES
+		miLista.top = null;
+		System.out.println(miLista);//miLista to String()*/
 	}
 }
