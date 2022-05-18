@@ -62,16 +62,14 @@ public class ListaSimple{
 		Node temp = new Node();
 		temp.name = nombre;
 		Node temp2 = this.top;
-
-		boolean NodoNoEncontrado = true;
-
-		while ( (temp2 != null) 
-				&& (NodoNoEncontrado) ) {
-				NodoNoEncontrado = !temp2.name.equals(buscado);	
-		         temp2 = temp2.next;
+			
+		//boolean NodoNoEncontrado = true;
+			
+		while((temp2 != null)
+		      && temp2.name.equals(buscado) == false){
+			temp2 = temp2.next;
 		}
-
-		if (temp2 != null){  //Nodo buscado se encontró
+		if (temp2 != null){ //Node has been found
 			temp.next = temp2.next;
 			temp2.next = temp;
 			temp = null;
@@ -79,7 +77,8 @@ public class ListaSimple{
 			return true;
 		}
 		else return false;
-	} 
+		
+	}
         
 	//Removal of Nodes
 	//Removing the first Node
@@ -90,8 +89,8 @@ public class ListaSimple{
 	//Removing a node that is not the first
 	public boolean borrarCualquierNodo(String buscado){
 		Node temp = this.top;
-		while((/*temp != null)
-		      && */temp.name.equals(buscado)) == false){
+		while((temp != null)
+		      && temp.name.equals(buscado) == false){
 			temp = temp.next;
 		}
 		if (temp != null){ //Node has been found
