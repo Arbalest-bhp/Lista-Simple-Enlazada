@@ -42,6 +42,16 @@ public class ProgramaListas {
 		System.out.println(miLista);//miLista to String()*/
 		
 		miLista.borrarPrimerNodo();
-		System.out.println(miLista);
+		System.out.println(miLista);//miLista to String()
+		
+		miLista.borrarCualquierNodo("A")
+		System.out.println(miLista);//miLista to String()
+		
+		result = miLista.borrarCualquierNodo("Z");
+		
+		if (result){
+			System.out.println("Se borro el Nodo Z");
+		}
+		else System.out.println("No se borro");
 	}
 }
