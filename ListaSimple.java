@@ -83,8 +83,26 @@ public class ListaSimple{
 		
 	}
 	//Removal of Nodes
-	public void borrarPrimerNodo
+	//Removing the first Node
+	public void borrarPrimerNodo{
 		this.top = this.top.next;
+	}
+	
+	//Removing a node that is not the first
+	public boolean borrarCualquierNodo(String buscado){
+		Node temp = this.top;
+		while((temp != null)
+		      && temp.name.equals(buscado) == false){
+			temp = temp.next;
+		}
+		if (temp != null){ //Node has been found
+			temp.next = temp.next.next;
+			temp = null;
+			return true;
+		}
+		else return false;
+		}
+	}
 	/*To remove a node
 	
 	top = top.next*/
