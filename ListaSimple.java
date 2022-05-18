@@ -59,6 +59,30 @@ public class ListaSimple{
 		temp2.next = temp;
 		temp = null;
 		temp2 = null;
+		
+	//Insertion between two nodes
+	public boolean insertarEntreNodos(String nombre, String buscado){
+		Node temp = new Node;
+		temp.name = nombre;
+		Node temp2 = this.top;
+			
+		//boolean NodoNoEncontrado = true;
+			
+		while((temp2 != null)
+		      && temp2.name.equals(buscado) == false){
+			temp2 = temp2.next;
+		}
+		if (temp2 != null){ //Node has been found
+			temp.next = temp2.next;
+			temp2.next = temp;
+			temp = null;
+			temp2 = null;
+			return true;
+		}
+		else return false;
+		
+	}
+}
 
 	
 
