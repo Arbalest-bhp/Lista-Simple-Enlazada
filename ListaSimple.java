@@ -90,8 +90,8 @@ public class ListaSimple{
 	//Removing a node that is not the first
 	public boolean borrarCualquierNodo(String buscado){
 		Node temp = this.top;
-		while((temp != null)
-		      && temp.name.equals(buscado) == false){
+		while((/*temp != null)
+		      && */temp.name.equals(buscado)) == false){
 			temp = temp.next;
 		}
 		if (temp != null){ //Node has been found
