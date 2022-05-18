@@ -18,5 +18,13 @@ public class ProgramaListas {
 
 		miLista.insertarAlFinal("E");
 		System.out.println(miLista); //miLista.toString
+		
+		boolean result = miLista.insertarEntreNodos("F", "A");
+		if (result){
+			System.out.println("Si inserto el nodo F");
+		}
+		else System.out.print("No encontro es nodo Z");
+		
+		System.out.println(miLista);//miLista to String()
 	}
 }
