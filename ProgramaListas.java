@@ -53,5 +53,8 @@ public class ProgramaListas {
 			System.out.println("Se borro el Nodo Z");
 		}
 		else System.out.println("No se borro");
+		
+		miLista.borrarUltimoNodo();
+		System.out.println(miLista);//miLista to String()
 	}
 }
