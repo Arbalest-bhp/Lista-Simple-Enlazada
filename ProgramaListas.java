@@ -23,7 +23,7 @@ public class ProgramaListas {
 		if (result){
 			System.out.println("Si inserto el nodo F");
 		}
-		else System.out.print("No encontro es nodo Z");
+		else System.out.print("No se encontro el nodo Z");
 		
 		System.out.println(miLista);//miLista to String()
 	}
