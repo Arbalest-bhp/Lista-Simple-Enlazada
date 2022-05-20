@@ -105,6 +105,12 @@ public class ListaSimple{
 	//Need to find the second to last node of the list
 	public void borrarUltimoNodo(){
 	Node temp = top;
+	//First make sure that the list does not only have one or no element
+	    if (temp == null)
+	          return null;
+	    if (temp.next == null)
+	          return null;
+	                
             //Find the Penultimate node
             while (temp.next.next != null)
 		temp = temp.next;
@@ -113,7 +119,8 @@ public class ListaSimple{
         }
 
 
-
+	//Eliminate a node by key value
+	
 	/*To remove a node
 	top = top.next*/
 }
